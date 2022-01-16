@@ -144,3 +144,15 @@ body {
 .card-items-buttons-btn2:hover, .card-items-buttons-btn2:active {
     color: hsl(245, 75%, 52%);
 }
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
