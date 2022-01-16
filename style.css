@@ -1,0 +1,183 @@
+@font-face {
+  font-family: redhat;
+  src: url("./font/RedHatDisplay-VariableFont_wght.ttf");
+}
+
+body {
+  background: #e0e8ff;
+  font-family: redhat;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  height: 650px;
+  width: 400px;
+  background: white;
+  border-radius: 5%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-img {
+  border-radius: 5% 5% 0 0;
+  background-image: url("./images/illustration-hero.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 33%;
+}
+
+@media screen and (max-width: 430px) {
+  .card {
+    width: 95%;
+    height: 80%;
+  }
+}
+
+.card-items {
+  text-align: center;
+  width: 80%;
+}
+
+.card-items-title {
+  margin-top: 10%;
+  color: #3829e0;
+  font-weight: 900;
+  font-size: 26px;
+}
+
+.card-items-description {
+  margin-top: 5%;
+  color: #7280a7;
+}
+
+.card-items-plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12%;
+}
+
+.card-items-plan-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.card-items-plan-left-wrap {
+  padding-left: 15px;
+}
+
+.card-items-plan-left-img {
+  height: 50px;
+  width: 50px;
+  background-image: url("./images/icon-music.svg");
+  background-repeat: no-repeat;
+}
+
+.card-items-plan-left-name {
+  font-weight: 700;
+  color: #3829e0;
+}
+
+.card-items-plan-left-price {
+  color: #7280a7;
+}
+
+.card-items-plan-right-text {
+  color: #3829e0;
+  -webkit-transition: color ease-in-out 0.1s;
+  transition: color ease-in-out 0.1s;
+}
+
+.card-items-plan-right-text:hover, .card-items-plan-right-text:active {
+  color: #7280a7;
+}
+
+.card-items-buttons {
+  margin-top: 13%;
+}
+
+.card-items-buttons-btn {
+  height: 48px;
+  border-radius: 15px;
+  background: #3829e0;
+  -webkit-transition: background ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s;
+  transition: background ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s;
+  transition: background ease-in-out 0.1s, box-shadow ease-in-out 0.1s;
+  transition: background ease-in-out 0.1s, box-shadow ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+
+.card-items-buttons-btn:hover, .card-items-buttons-btn:active {
+  background: rgba(56, 41, 224, 0.623);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+          box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card-items-buttons-btn2 {
+  margin-top: 30px;
+  -webkit-transition: color ease-in-out 0.1s;
+  transition: color ease-in-out 0.1s;
+  color: #7280a7;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.card-items-buttons-btn2:hover, .card-items-buttons-btn2:active {
+  color: #3829e0;
+}
+/*# sourceMappingURL=style.css.map */
